@@ -12,10 +12,10 @@ labels ={
   1: "versicolor",
   2: "virginica"
 }
-
+# split the data into 0.45 and 0.55
 #split the data set testn to 0.3
 from sklearn.model_selection import train_test_split
-x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=.30)
+x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=.45)
 
 #Using decision tree algorithm
 from sklearn import tree
